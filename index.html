@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikquiz</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <h1 class = "center">Musikquiz</h1>
+    <p>
+
+            
+    </p>
+    <div id="landing" class="center">
+        
+        <input type="checkbox"  id="random">
+        <label for="random">Zufall</label>
+
+        <label for="rangeMin">Von:</label>
+        <input type="number" id="rangeMin" value="1">
+
+        <label for="rangeMin">Bis:</label>
+        <input type="number" id="rangeMax" value="40">
+
+        <button class="button box" onclick="go()">GO</button>
+        
+    </div>
+
+
+    <div id="quiz" class ="center" style="display: none;" >
+        
+        <div class="center">
+            
+            <audio id = "audioplayer" controls class ="center" >
+                <source id = "audiosrc" src="" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <div class="center">
+            <label for="werknameInput" id ="werknameLabel"></label>
+            <input id="werknameInput" list ="stückeDataList" type="text" placeholder="Werkname" class = "container">
+        </div>
+        <div class="center">
+            <label for="komponistenInput" id="komponistenLabel"></label>
+            <input id="komponistenInput" type="text" list="komponistenDataList" placeholder="Komponist" class = "container">
+        </div>
+        <label for="epoche" id="epochenLabel"></label>
+        <select name="Epoche" id="epoche" class = "center">
+            <option value="none">Epoche auswählen</option>
+            <option value="Renaissance">Renaissance</option>
+            <option value="Barock">Barock</option>
+            <option value="Klassik">Klassik</option>
+            <option value="Romantik">Romantik</option>
+            <option value="Impressionismus">Impressionismus</option>
+            <option value="Moderne">Moderne</option>
+        </select>
+        <p>
+
+        </p>
+        <button onclick="check()" class="button box" id="checkButton" role="button">CHECK</button>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
