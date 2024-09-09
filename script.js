@@ -31,7 +31,7 @@ function newSong(){
     
 
     currentSongId = id;
-    let path = "/music/id/" + data[id].id + ".mp3"
+    let path = "/musikquiz/music/id/" + data[id].id + ".mp3"
     let audiosrc = document.createElement("source");
     audiosrc.src = path;
     audiosrc.type = "audio/mpeg";
