@@ -14,13 +14,20 @@ let max = 39;
 let rand = false;
 let currentSongId = min;
 
-
+let doneIds = []
 
 function newSong(){
-
+    if (doneIds.length == max - min){
+        doneIds = []
+        id = 0
+    }
 
     if (rand == true){
-        id = min + Math.floor(Math.random()* (max-min))
+        do{
+            id = min + Math.floor(Math.random()* (max-min))
+        }while(!(doneIds.indexOf(id) == -1))
+        doneIds.push(id);
+
     }else{
         if (currentSongId == max){
             id = 0;
@@ -48,6 +55,7 @@ function go(){
     rand = document.getElementById("random").checked;
     console.log(rand)
     currentSongId = -1;
+    doneIds = []
     newSong()
     resetInputs()
 }
