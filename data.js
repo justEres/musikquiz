@@ -140,7 +140,7 @@ function get_data(){
         },
         {
             "id": "24",
-            "werkname": "Sinfonie g-moll, 1. Satz",
+            "werkname": "Symphonie G-Minor, 1. Satz",
             "komponist": "Wolfgang Amadeus Mozart",
             "epoche": "Klassik"
         },
@@ -300,7 +300,7 @@ function get_stücke(){
         "Also sprach Zarathustra",
         "Lacrimosa (aus: Requiem)",
         "Clair de lune (aus: Bergamasque-Suite)",
-        "Sinfonie g-moll, 1. Satz",
+        "Symphonie G-Minor, 1. Satz",
         "Liebestraum",
         "Marsch N°1 (aus: Pomp & Circumstances)",
         "Brandenburgisches Konzert N°2",
