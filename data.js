@@ -34,7 +34,7 @@ function get_data(){
             "id": "06",
             "werkname": "Walzer (aus: Jazz-Suite N°2)",
             "komponist": "Dimitri Schostakowitsch",
-            "epoche": "Musik des 20. Jhd."
+            "epoche": "Moderne"
         },
         {
             "id": "07",
@@ -70,7 +70,7 @@ function get_data(){
             "id": "12",
             "werkname": "O Fortuna (aus: Carmina Burana)",
             "komponist": "Carl Orff",
-            "epoche": "Musik des 20. Jhd."
+            "epoche": "Moderne"
         },
         {
             "id": "13",
@@ -88,7 +88,7 @@ function get_data(){
             "id": "15",
             "werkname": "Gymnopedie N°1",
             "komponist": "Eric Satie",
-            "epoche": "Musik des 20. Jhd."
+            "epoche": "Moderne"
         },
         {
             "id": "16",
