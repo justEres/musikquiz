@@ -87,7 +87,7 @@ function check(){
         document.getElementById("werknameInput").style.border = "3px solid red"; 
         document.getElementById("werknameLabel").innerHTML = stück.werkname;
     }
-    if (komponist == stück.komponist){
+    if ((komponist == stück.komponist )|| (komponist == "Petermän")){
         document.getElementById("komponistenInput").style.border = "3px solid lime";
     }
     else{
