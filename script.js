@@ -50,6 +50,7 @@ function newSong(){
 function go(){
     document.getElementById("landing").style.display = "none";
     document.getElementById("quiz").style.display = "block";
+    document.getElementById("audio-player").style.display = "block";
     min = document.getElementById("rangeMin").value - 1;
     max = document.getElementById("rangeMax").value - 1;
     rand = document.getElementById("random").checked;
