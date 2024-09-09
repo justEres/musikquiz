@@ -61,13 +61,13 @@ function go(){
 }
 
 function resetInputs(){
-    let werkname = document.getElementById("werknameInput").value = "";
+    document.getElementById("werknameInput").value = "";
     document.getElementById("werknameInput").style.border = "1px solid var(--border)"
     document.getElementById("werknameLabel").innerHTML = "";
-    let komponist = document.getElementById("komponistenInput").value = "";
+    document.getElementById("komponistenInput").value = "";
     document.getElementById("komponistenInput").style.border = "1px solid var(--border)"
     document.getElementById("komponistenLabel").innerHTML = "";
-    let epoche = document.getElementById("epoche").value = "none";
+    document.getElementById("epoche").value = "none";
     document.getElementById("epoche").style.border = "1px solid var(--border)"
     document.getElementById("epochenLabel").innerHTML = "";
     document.getElementById("checkButton").innerHTML = "CHECK"
