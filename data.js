@@ -92,8 +92,8 @@ function get_data(){
         },
         {
             "id": "16",
-            "werkname": "Klavierkonzert N°1, 1. Satz",
-            "komponist": "Peter Tschaikowsky",
+            "werkname": "Klavierkonzert N°1, 1. Satz, B-Minor",
+            "komponist": "Pjotr Iljitsch Tschaikowsky",
             "epoche": "Romantik"
         },
         {
@@ -164,7 +164,7 @@ function get_data(){
         },
         {
             "id": "28",
-            "werkname": "Klavierkonzert N°2, 2. Satz",
+            "werkname": "Klavierkonzert N°2, 2. Satz, F-Minor",
             "komponist": "Frédéric Chopin",
             "epoche": "Romantik"
         },
@@ -183,7 +183,7 @@ function get_data(){
         {
             "id": "31",
             "werkname": "Blumenwalzer (aus: Der Nussknacker)",
-            "komponist": "Peter Tschaikowsky",
+            "komponist": "Pjotr Iljitsch Tschaikowsky",
             "epoche": "Romantik"
         },
         {
@@ -263,7 +263,7 @@ function get_komponisten(){
         "Ludwig van Beethoven",
         "Marc Antoine Charpentier",
         "Maurice Ravel",
-        "Peter Tschaikowsky",
+        "Pjotr Iljitsch Tschaikowsky",
         "Richard Strauss",
         "Richard Wagner",
         "Robert Schumann",
@@ -292,7 +292,7 @@ function get_stücke(){
         "Nessun Dorma (aus: Turandot)",
         "Präludium (aus: Te Deum)",
         "Gymnopedie N°1",
-        "Klavierkonzert N°1, 1. Satz",
+        "Klavierkonzert N°1, 1. Satz, B-Minor",
         "La Rejouissance (aus: Feuerwerksmusik)",
         "Rhapsodie (über ein Thema von Paganini)",
         "Schlusschor (aus 9. Sinfonie)",
@@ -304,7 +304,7 @@ function get_stücke(){
         "Liebestraum",
         "Marsch N°1 (aus: Pomp & Circumstances)",
         "Brandenburgisches Konzert N°2",
-        "Klavierkonzert N°2, 2. Satz",
+        "Klavierkonzert N°2, 2. Satz, F-Minor",
         "Adagio g-moll",
         "Walkürenritt (aus: Die Walküre)",
         "Blumenwalzer (aus: Der Nussknacker)",
