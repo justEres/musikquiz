@@ -3,6 +3,8 @@ const data = get_data();
 const komponisten = get_komponisten();
 const stücke = get_stücke();
 
+//console.log(get_stücke().sort())
+
 fillKomponistenDataList()
 fillStückeDataList()
 
