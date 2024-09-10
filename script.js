@@ -6,6 +6,16 @@ const stücke = get_stücke();
 fillKomponistenDataList()
 fillStückeDataList()
 
+var supports_video_autoplay = function(callback) {
+
+    if (typeof callback !== "function") return false;
+  
+    var v = document.createElement("video");
+    v.paused = true;
+    var p = "play" in v && v.play();
+  
+    callback(!v.paused || ("Promise" in window && p instanceof Promise));
+  };
 
 
 //check()
@@ -45,7 +55,19 @@ function newSong(){
     audiosrc.id = "audiosrc";
     document.getElementById("audiosrc").replaceWith(audiosrc)
     document.getElementById("audioplayer").load()
+
+
+    supports_video_autoplay((supported)=>{
+        if (supported){
+            document.getElementById("audioplayer").play() 
+        }
+    })
+    
+      
+
 }
+
+
 
 function go(){
     document.getElementById("landing").style.display = "none";
@@ -54,7 +76,7 @@ function go(){
     min = document.getElementById("rangeMin").value - 1;
     max = document.getElementById("rangeMax").value - 1;
     rand = document.getElementById("random").checked;
-    console.log(rand)
+    
     currentSongId = -1;
     doneIds = []
     newSong()
@@ -63,15 +85,15 @@ function go(){
 
 function resetInputs(){
     document.getElementById("werknameInput").value = "";
-    document.getElementById("werknameInput").style.border = "1px solid var(--border)"
+    document.getElementById("werknameInput").style.border = "1px solid var(--border)";
     document.getElementById("werknameLabel").innerHTML = "";
     document.getElementById("komponistenInput").value = "";
-    document.getElementById("komponistenInput").style.border = "1px solid var(--border)"
+    document.getElementById("komponistenInput").style.border = "1px solid var(--border)";
     document.getElementById("komponistenLabel").innerHTML = "";
     document.getElementById("epoche").value = "none";
-    document.getElementById("epoche").style.border = "1px solid var(--border)"
+    document.getElementById("epoche").style.border = "1px solid var(--border)";
     document.getElementById("epochenLabel").innerHTML = "";
-    document.getElementById("checkButton").innerHTML = "CHECK"
+    document.getElementById("checkButton").innerHTML = "CHECK";
 
 
 }
@@ -96,12 +118,17 @@ function check(){
         document.getElementById("werknameInput").style.border = "3px solid red"; 
         document.getElementById("werknameLabel").innerHTML = stück.werkname;
     }
-    if ((komponist == stück.komponist )|| (komponist == "Petermän")){
+    if (komponist == stück.komponist){
+        document.getElementById("komponistenInput").style.border = "3px solid lime";
+    }
+    else if (komponist == "Petermän"){
         document.getElementById("komponistenInput").style.border = "3px solid lime";
     }
     else{
         document.getElementById("komponistenInput").style.border = "3px solid red";
-    }   document.getElementById("komponistenLabel").innerHTML = stück.komponist;
+        document.getElementById("komponistenLabel").innerHTML = stück.komponist;
+    }
+
     if (epoche == stück.epoche){
         document.getElementById("epoche").style.border = "3px solid lime";
     }
